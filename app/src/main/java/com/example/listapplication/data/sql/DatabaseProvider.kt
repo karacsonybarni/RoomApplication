@@ -14,8 +14,8 @@ object DatabaseProvider {
                 applicationContext,
                 AppDatabase::class.java, "database-name"
             ).build()
+            db = localInstance
         }
-        db = localInstance
         return localInstance
     }
 }
